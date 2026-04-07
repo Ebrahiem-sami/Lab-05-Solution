@@ -90,6 +90,7 @@ services:
         docker-entrypoint.sh cassandra -f &
         until cqlsh -e 'DESCRIBE KEYSPACES' 2>/dev/null; do sleep 5; done;
         cqlsh -e \"CREATE KEYSPACE IF NOT EXISTS $${CASSANDRA_KEYSPACE} WITH replication = {'class':'SimpleStrategy','replication_factor':1};\";
+        cqlsh -e \"CREATE TABLE IF NOT EXISTS $${CASSANDRA_KEYSPACE}.sensor_readings (sensor_id text, reading_time timestamp, temperature double, humidity double, location text, PRIMARY KEY (sensor_id, reading_time)) WITH CLUSTERING ORDER BY (reading_time DESC);\";
         wait
       "
     healthcheck:
@@ -164,6 +165,9 @@ services:
       SPRING_DATA_NEO4J_URI: bolt://neo4j:7687
       SPRING_ELASTICSEARCH_URIS: http://elasticsearch:9200
       SPRING_CASSANDRA_CONTACTPOINTS: cassandra
+      SPRING_CASSANDRA_KEYSPACENAME: lab05ks
+      SPRING_CASSANDRA_LOCALDATACENTER: datacenter1
+      SPRING_CASSANDRA_SCHEMAACTION: none
     depends_on:
       - postgres
       - mongo

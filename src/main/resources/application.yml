@@ -29,7 +29,7 @@ spring:
     port: 9042
     local-datacenter: datacenter1
     keyspace-name: lab05ks
-    schema-action: create-if-not-exists
+    schema-action: none
 
   # ── Neo4j ──────────────────────────────────────────────────
   neo4j:
