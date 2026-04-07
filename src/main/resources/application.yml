@@ -46,5 +46,4 @@ USER_NAME: Ibrahim_Sami
 ID: "55-12509"
 
 app:
-  version: "1.0.0"
-  description: "Smart E-Commerce Platform"
+  description: "Smart E-Commerce Purchase API"
