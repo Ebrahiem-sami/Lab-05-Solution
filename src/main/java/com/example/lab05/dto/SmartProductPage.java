@@ -4,10 +4,6 @@ import java.io.Serializable;
 import java.util.List;
 import java.util.Map;
 
-/**
- * Assembles data from all six databases into a single response.
- * Every field comes from a different database.
- */
 public record SmartProductPage(
     String name,                        // PostgreSQL
     Double price,                       // PostgreSQL

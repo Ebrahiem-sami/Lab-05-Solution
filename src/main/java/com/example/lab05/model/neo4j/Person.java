@@ -9,23 +9,7 @@ import org.springframework.data.neo4j.core.schema.Node;
 import org.springframework.data.neo4j.core.schema.Relationship;
 
 
-// TODO (Section 5 — Neo4j):
-// Add the following annotations as described in the manual:
-//
-// @Node
-// public class Person {
-//
-//     @Id @GeneratedValue
-//     private Long id;
-//
-//     private String name;
-//
-//     @Relationship(type = "FOLLOWS", direction = Relationship.Direction.OUTGOING)
-//     private List<Person> following = new ArrayList<>();
-//
-//     @Relationship(type = "PURCHASED", direction = Relationship.Direction.OUTGOING)
-//     private List<Purchased> purchases = new ArrayList<>();
-// }
+
 
 @Node
 public class Person {

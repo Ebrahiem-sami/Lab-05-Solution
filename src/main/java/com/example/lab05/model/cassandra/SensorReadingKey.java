@@ -8,19 +8,7 @@ import org.springframework.data.cassandra.core.cql.PrimaryKeyType;
 import org.springframework.data.cassandra.core.mapping.PrimaryKeyClass;
 import org.springframework.data.cassandra.core.mapping.PrimaryKeyColumn;
 
-// TODO (Section 4 — Cassandra):
-// Add the following annotations as described in the manual:
-//
-// @PrimaryKeyClass
-// public class SensorReadingKey implements Serializable {
-//
-//     @PrimaryKeyColumn(name = "sensor_id", ordinal = 0, type = PrimaryKeyType.PARTITIONED)
-//     private String sensorId;
-//
-//     @PrimaryKeyColumn(name = "reading_time", ordinal = 1,
-//                       type = PrimaryKeyType.CLUSTERED, ordering = Ordering.DESCENDING)
-//     private Instant readingTime;
-// }
+
 
 @PrimaryKeyClass
 public class SensorReadingKey implements Serializable {

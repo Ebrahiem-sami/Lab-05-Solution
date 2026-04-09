@@ -9,27 +9,7 @@ import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.index.Indexed;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-// TODO (Section 2 — MongoDB):
-// Add the following annotations and fields as described in the manual:
-//
-// @Document(collection = "products")
-// public class MongoProduct {
-//
-//     @Id
-//     private String id;
-//
-//     @Indexed
-//     private String name;
-//
-//     private String category;
-//     private Double price;
-//     private Double rating;
-//
-//     private List<String> tags = new ArrayList<>();
-//     private Map<String, Object> specifications = new HashMap<>();
-//
-//     // Add getters, setters, and constructors
-// }
+
 @Document(collection = "products")
 public class MongoProduct {
 
@@ -45,7 +25,6 @@ public class MongoProduct {
 
     public MongoProduct() {}
 
-    // ── Getters & Setters ──
 
     public String getId() { return id; }
     public void setId(String id) { this.id = id; }

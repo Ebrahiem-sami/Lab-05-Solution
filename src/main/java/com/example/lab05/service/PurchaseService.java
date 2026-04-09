@@ -7,6 +7,8 @@ import org.slf4j.LoggerFactory;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 import com.example.lab05.dto.PurchaseRequest;
 import com.example.lab05.model.Product;
 import com.example.lab05.model.cassandra.SensorReading;
@@ -39,6 +41,10 @@ public class PurchaseService {
         this.sensorService = sensorService;
         this.productSearchService = productSearchService;
         this.redisTemplate = redisTemplate;
+    }
+
+    public List<PurchaseReceipt> getReceiptsByPerson(String personName) {
+        return purchaseReceiptRepository.findByPersonName(personName);
     }
 
     public PurchaseReceipt executePurchase(PurchaseRequest request) {

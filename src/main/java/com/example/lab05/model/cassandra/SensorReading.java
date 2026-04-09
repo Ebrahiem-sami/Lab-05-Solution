@@ -3,19 +3,7 @@ package com.example.lab05.model.cassandra;
 import org.springframework.data.cassandra.core.mapping.PrimaryKey;
 import org.springframework.data.cassandra.core.mapping.Table;
 
-// TODO (Section 4 — Cassandra):
-// Add the following annotations as described in the manual:
-//
-// @Table("sensor_readings")
-// public class SensorReading {
-//
-//     @PrimaryKey
-//     private SensorReadingKey key;
-//
-//     private Double temperature;
-//     private Double humidity;
-//     private String location;
-// }
+
 
 @Table("sensor_readings")
 public class SensorReading {

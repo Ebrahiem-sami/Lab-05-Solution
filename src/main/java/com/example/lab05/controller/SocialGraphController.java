@@ -1,10 +1,6 @@
 package com.example.lab05.controller;
 
-// ═══════════════════════════════════════════════════════════════
-// TODO (Section 5 — Neo4j):
-// Uncomment this entire controller after implementing
-// SocialGraphService, PersonRepository, and Neo4jGraphRepository.
-// ═══════════════════════════════════════════════════════════════
+
 
 import java.util.List;
 import java.util.Map;

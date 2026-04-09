@@ -7,21 +7,7 @@ import org.springframework.data.neo4j.core.schema.Id;
 import org.springframework.data.neo4j.core.schema.RelationshipProperties;
 import org.springframework.data.neo4j.core.schema.TargetNode;
 
-// TODO (Section 5 — Neo4j):
-// Add the following annotations as described in the manual:
-//
-// @RelationshipProperties
-// public class Purchased {
-//
-//     @Id @GeneratedValue
-//     private Long id;
-//
-//     @TargetNode
-//     private Neo4jProduct product;
-//
-//     private LocalDateTime purchasedAt;
-//     private Integer quantity;
-// }
+
 
 @RelationshipProperties
 public class Purchased {

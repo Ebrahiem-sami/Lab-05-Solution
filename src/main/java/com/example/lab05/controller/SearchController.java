@@ -1,11 +1,5 @@
 package com.example.lab05.controller;
 
-// ═══════════════════════════════════════════════════════════════
-// TODO (Section 6 — Elasticsearch):
-// Uncomment this entire controller after implementing
-// ProductSearchService, ProductSearchRepository, and
-// ElasticSearchQueryRepository.
-// ═══════════════════════════════════════════════════════════════
 
 import java.util.List;
 
@@ -35,7 +29,7 @@ public class SearchController {
         return searchService.saveProduct(product);
     }
 
-    // Pattern 1: Derived query
+    // Pattern 1
     @GetMapping("/products/category/{category}")
     public List<ProductDocument> byCategory(@PathVariable String category) {
         return searchService.getByCategory(category);
@@ -47,7 +41,7 @@ public class SearchController {
         return searchService.searchByName(q);
     }
 
-    // Pattern 3: Full NativeQuery search
+ 
     @GetMapping
     public List<ProductDocument> search(
             @RequestParam String q,

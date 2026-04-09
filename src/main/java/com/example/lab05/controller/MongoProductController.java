@@ -1,10 +1,5 @@
 package com.example.lab05.controller;
 
-// ═══════════════════════════════════════════════════════════════
-// TODO (Section 2 — MongoDB):
-// Uncomment this entire controller after implementing
-// MongoProductService and MongoProductRepository.
-// ═══════════════════════════════════════════════════════════════
 
 import java.util.List;
 

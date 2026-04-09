@@ -33,7 +33,6 @@ public class Product {
 
     public Product() {}
 
-    // ── Getters & Setters ──
 
     public Long getId() { return id; }
     public void setId(Long id) { this.id = id; }

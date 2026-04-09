@@ -1,10 +1,5 @@
 package com.example.lab05.controller;
 
-// ═══════════════════════════════════════════════════════════════
-// TODO (Section 4 — Cassandra):
-// Uncomment this entire controller after implementing
-// SensorService, SensorReadingRepository, and CassandraQueryRepository.
-// ═══════════════════════════════════════════════════════════════
 
 import java.time.Instant;
 import java.util.List;

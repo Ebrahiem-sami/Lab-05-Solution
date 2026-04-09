@@ -22,11 +22,7 @@ import java.time.Instant;
 import java.time.temporal.ChronoUnit;
 import java.util.*;
 
-/**
- * Populates all 6 databases with test data.
- * Hit GET /api/seed once to populate.
- * Idempotent — if data already exists, it skips.
- */
+
 @RestController
 public class DataSeederController {
 
@@ -176,9 +172,6 @@ public class DataSeederController {
         return p;
     }
 
-    // ═══════════════════════════════════════════════════════════
-    // 3. Neo4j — 6 people, follow relationships, some purchases
-    // ═══════════════════════════════════════════════════════════
     private String seedNeo4j() {
         Person alice = new Person("Alice");
         Person bob   = new Person("Bob");

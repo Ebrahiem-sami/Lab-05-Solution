@@ -1,10 +1,6 @@
 package com.example.lab05.controller;
 
-// ═══════════════════════════════════════════════════════════════
-// TODO (Section 7 — Polyglot Integration):
-// Uncomment this entire controller after implementing
-// SmartProductPageService.
-// ═══════════════════════════════════════════════════════════════
+
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
